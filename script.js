@@ -126,6 +126,8 @@ function eventHadler() {
             var [ctr, nextdate] = getNextPalindromeDate(date);
             output.innerText = `Oh no...! your birthday is not palindrome, The next palindrome date is ${nextdate.day}-${nextdate.month}-${nextdate.year}, You missed it by ${ctr} day(s)`;
         }
+    } else {
+        output.innerText = 'Please select a date....!';
     }
 }
 
